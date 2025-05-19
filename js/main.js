@@ -1,5 +1,6 @@
 var quotes = document.querySelectorAll(".quote");
-var randomNum = 0;
+var randomNum = Math.floor(Math.random() * quotes.length);
+quotes[randomNum].style.display = "block";
 function random() {
   var randomNumCheck = Math.floor(Math.random() * quotes.length);
   while (randomNum === randomNumCheck) {
